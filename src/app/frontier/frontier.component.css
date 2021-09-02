@@ -1,0 +1,39 @@
+.nav>li {
+    display: inline-block;
+}
+
+.nav>li>a{
+    font-size: xx-small;
+}
+
+.nav>li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0; 
+    height:100%;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 250px; 
+  }
+  
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ .scrollable {
+   overflow : scroll;
+ }
+
+ thead {
+  color : blue;
+}
+
