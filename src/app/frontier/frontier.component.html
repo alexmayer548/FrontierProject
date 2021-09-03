@@ -26,14 +26,26 @@
 </div>
 
 <div class="row1">
-  <div class="column">
+  <div class="column" style="background-color:#aaa;">
+    <h2 style="text-align:center;">My Certifications as preparer</h2>
+    <div class="chart-wrapper">
+    
+      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+        [options]="pieChartOptions" [plugins]="pieChartPlugins" [legend]="pieChartLegend">
+    
+      </canvas>
+    </div>
+    <input type="text"
+  placeholder="cert-date-range"
+  class="form-control"
+  bsDaterangepicker>
   </div>
   <div class="column" style="background-color:#bbb;">
     <h2 style="text-align: center;">My Certifications as Approver 1</h2>
     <br>
     <p style="text-align: center;">you currently do not have any Certifications assigned for the dates selected</p>
     <input type="text"
-  placeholder="Select-the-date-range"
+  placeholder="cert-date-range"
   class="form-control"
   bsDaterangepicker>
   </div>
@@ -42,7 +54,7 @@
     <br>
     <p style="text-align: center;">you currently do not have any Certifications assigned for the dates selected</p>
     <input type="text"
-  placeholder="Select-the-date-range"
+  placeholder="cert-date-range"
   class="form-control"
   bsDaterangepicker>
   </div>
@@ -51,7 +63,7 @@
     <br>
     <p style="text-align: center;">you currently do not have any Certifications assigned for the dates selected</p>
     <input type="text"
-  placeholder="Select-the-date-range"
+  placeholder="cert-date-range"
   class="form-control"
   bsDaterangepicker>
   </div>
